@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Portfolio cá nhân của sinh viên Công nghệ thông tin.">
+  <title>Portfolio | Sinh viên CNTT</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+  <script src="js/script.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#main">Bỏ qua điều hướng</a>
+  <header class="site-header" id="top">
+    <nav class="navbar container" aria-label="Điều hướng chính">
+      <a class="logo" href="#home" aria-label="Về đầu trang"><span class="logo-mark">&lt;/&gt;</span><span>vung<span class="accent">.dev</span></span></a>
+      <button class="menu-toggle" id="menuToggle" aria-label="Mở menu" aria-expanded="false" aria-controls="navLinks">
+        <span></span><span></span><span></span>
+      </button>
+      <div class="nav-links" id="navLinks">
+        <a href="#about">Giới thiệu</a>
+        <a href="#skills">Kỹ năng</a>
+        <a href="#education">Học vấn</a>
+        <a href="#projects">Dự án</a>
+        <a href="#contact">Liên hệ</a>
+        <button class="theme-toggle" id="themeToggle" type="button" aria-label="Chuyển giao diện sáng tối" title="Chuyển giao diện">☼</button>
+      </div>
+    </nav>
+  </header>
+
+  <main id="main">
+    <section class="hero section container" id="home">
+      <div class="hero-copy reveal">
+        <p class="eyebrow"><span class="status-dot"></span> SINH VIÊN CÔNG NGHỆ THÔNG TIN</p>
+        <h1>Xin chào, mình là<br><span class="gradient-text">Trần Thanh Vững.</span></h1>
+        <p class="hero-subtitle">Mình đang học cách biến ý tưởng thành những sản phẩm số hữu ích — từng dòng code một.</p>
+        <p class="hero-description">Sinh viên CNTT yêu thích lập trình, thiết kế website và không ngừng khám phá công nghệ mới. Mục tiêu của mình là xây dựng nền tảng vững chắc để trở thành một lập trình viên web.</p>
+        <div class="hero-actions">
+          <a class="btn btn-primary" href="#projects">Khám phá dự án <span aria-hidden="true">↗</span></a>
+          <a class="btn btn-secondary" href="#contact">Liên hệ với mình</a>
+        </div>
+        <div class="hero-meta"><span>📍 Bình Dương, Việt Nam</span><span>🎓 Sinh viên năm nhất</span></div>
+      </div>
+      <div class="hero-visual reveal" aria-label="Minh họa lập trình">
+        <div class="visual-glow"></div>
+        <div class="code-window">
+          <div class="window-top"><div class="window-dots"><i></i><i></i><i></i></div><span>about-me.js</span><span class="window-lock">●</span></div>
+          <pre><code><span class="code-purple">const</span> <span class="code-blue">developer</span> = {
+  name: <span class="code-green">'Thanh Vững'</span>,
+  major: <span class="code-green">'Information Technology'</span>,
+  skills: [
+    <span class="code-green">'HTML & CSS'</span>,
+    <span class="code-green">'JavaScript'</span>,
+    <span class="code-green">'Python'</span>
+  ],
+  learning: <span class="code-green">'Every day'</span>,
+  <span class="code-blue">sayHello</span>() {
+    <span class="code-purple">return</span> <span class="code-green">'Hello, world!'</span>;
+  }
+};</code></pre>
+          <div class="code-footer"><span><span class="status-dot"></span> Sẵn sàng học hỏi</span><span>UTF-8</span></div>
+        </div>
+        <div class="floating-card float-one"><span class="float-icon">✦</span><div><strong>Luôn học hỏi</strong><small>Better every day</small></div></div>
+        <div class="floating-card float-two"><span class="float-icon purple">⌘</span><div><strong>Code with purpose</strong><small>Build · Learn · Repeat</small></div></div>
+      </div>
+      <a class="scroll-cue" href="#about"><span></span> Cuộn để khám phá</a>
+    </section>
+
+    <section class="section container" id="about">
+      <div class="section-heading reveal"><p class="eyebrow">01 / GIỚI THIỆU</p><h2>Một chút về <span class="gradient-text">mình</span></h2><p>Người học công nghệ với tinh thần chủ động và ham tìm tòi.</p></div>
+      <div class="about-grid">
+        <article class="about-card profile-card reveal">
+          <div class="avatar-placeholder" aria-label="Ảnh đại diện minh họa"><span>TV</span><i class="avatar-spark">✦</i></div>
+          <div><h3>Trần Thanh Vững</h3><p class="muted">Sinh viên Công nghệ thông tin</p></div>
+          <div class="profile-tags"><span>Chăm chỉ</span><span>Hòa đồng</span><span>Sáng tạo</span></div>
+        </article>
+        <article class="about-card about-text reveal">
+          <h3>Mình tin rằng mỗi dự án là một cơ hội để tiến bộ.</h3>
+          <p>Hiện tại, mình đang tập trung xây dựng kiến thức nền tảng về lập trình, thuật toán và phát triển website. Mình thích cách công nghệ giải quyết những vấn đề thực tế và mong muốn tạo ra sản phẩm dễ sử dụng, có ích cho mọi người.</p>
+          <p>Ngoài giờ học, mình thích tập gym, chơi bóng đá và nấu ăn. Những hoạt động này giúp mình rèn tính kỷ luật, khả năng phối hợp và sự kiên trì.</p>
+          <div class="about-facts"><div><strong>01</strong><span>Năm học</span></div><div><strong>02+</strong><span>Dự án thực hành</span></div><div><strong>∞</strong><span>Tinh thần học hỏi</span></div></div>
+        </article>
+      </div>
+    </section>
+
+    <section class="section container" id="goals">
+      <div class="section-heading reveal"><p class="eyebrow">02 / ĐỊNH HƯỚNG</p><h2>Mục tiêu <span class="gradient-text">nghề nghiệp</span></h2><p>Học chắc nền tảng, thực hành thường xuyên và phát triển từng bước.</p></div>
+      <div class="goal-grid">
+        <article class="info-card reveal"><span class="card-icon">⌘</span><h3>Ngắn hạn</h3><p>Nắm vững HTML, CSS, JavaScript và Python; cải thiện tư duy giải thuật; hoàn thành các bài tập và dự án cá nhân có chất lượng.</p><span class="card-number">01</span></article>
+        <article class="info-card reveal"><span class="card-icon">↗</span><h3>Trung hạn</h3><p>Xây dựng portfolio tốt hơn, học cách làm việc với Git/GitHub, cơ sở dữ liệu và quy trình phát triển phần mềm.</p><span class="card-number">02</span></article>
+        <article class="info-card reveal"><span class="card-icon">✧</span><h3>Dài hạn</h3><p>Trở thành lập trình viên web có nền tảng chuyên môn vững, giao tiếp tiếng Anh tốt và tạo ra sản phẩm hữu ích cho người dùng.</p><span class="card-number">03</span></article>
+      </div>
+    </section>
+
+    <section class="section container" id="skills">
+      <div class="section-heading reveal"><p class="eyebrow">03 / NĂNG LỰC</p><h2>Kỹ năng <span class="gradient-text">của mình</span></h2><p>Các kỹ năng đang học và rèn luyện qua bài tập thực hành.</p></div>
+      <div class="skills-layout">
+        <article class="skills-panel reveal"><h3><span class="panel-symbol">⌨</span> Kỹ năng kỹ thuật</h3>
+          <div class="skill-row"><div class="skill-label"><span>HTML5</span><span>Đang học</span></div><div class="skill-track"><span style="--skill:72%"></span></div></div>
+          <div class="skill-row"><div class="skill-label"><span>CSS3 / Responsive</span><span>Đang học</span></div><div class="skill-track"><span style="--skill:62%"></span></div></div>
+          <div class="skill-row"><div class="skill-label"><span>JavaScript</span><span>Cơ bản</span></div><div class="skill-track"><span style="--skill:42%"></span></div></div>
+          <div class="skill-row"><div class="skill-label"><span>Python</span><span>Cơ bản</span></div><div class="skill-track"><span style="--skill:55%"></span></div></div>
+          <div class="skill-row"><div class="skill-label"><span>C++</span><span>Cơ bản</span></div><div class="skill-track"><span style="--skill:48%"></span></div></div>
+          <p class="skill-note">* Mức độ tự đánh giá để minh họa; hãy điều chỉnh theo năng lực thực tế.</p>
+        </article>
+        <article class="skills-panel tools-panel reveal"><h3><span class="panel-symbol">✦</span> Công cụ & kỹ năng mềm</h3><div class="tool-chips"><span>VS Code</span><span>Git cơ bản</span><span>Microsoft Office</span><span>Tư duy logic</span><span>Làm việc nhóm</span><span>Quản lý thời gian</span><span>Giao tiếp</span><span>Tự học</span></div><div class="quote-box"><span>“</span><p>Không cần giỏi ngay từ đầu. Quan trọng là tiếp tục thực hành và tiến bộ mỗi ngày.</p></div></article>
+      </div>
+    </section>
+
+    <section class="section container" id="education">
+      <div class="section-heading reveal"><p class="eyebrow">04 / HÀNH TRÌNH</p><h2>Học vấn & <span class="gradient-text">hoạt động</span></h2><p>Những cột mốc trong hành trình học tập của mình.</p></div>
+      <div class="timeline">
+        <article class="timeline-item reveal"><div class="timeline-marker"></div><div class="timeline-date">HIỆN TẠI</div><div class="timeline-content"><h3>Đại học Bình Dương</h3><p class="timeline-subtitle">Ngành Công nghệ thông tin · Sinh viên năm nhất</p><p>Học lập trình cơ bản, cấu trúc dữ liệu, cơ sở dữ liệu và kiến thức nền tảng máy tính.</p><span class="timeline-tag">Học vấn</span></div></article>
+        <article class="timeline-item reveal"><div class="timeline-marker"></div><div class="timeline-date">ĐANG RÈN LUYỆN</div><div class="timeline-content"><h3>Tự học phát triển website</h3><p class="timeline-subtitle">HTML · CSS · JavaScript</p><p>Thực hành xây dựng trang web cá nhân, bố cục responsive và tương tác phía trình duyệt.</p><span class="timeline-tag">Tự học</span></div></article>
+        <article class="timeline-item reveal"><div class="timeline-marker"></div><div class="timeline-date">NGOÀI GIỜ HỌC</div><div class="timeline-content"><h3>Thể thao & hoạt động cá nhân</h3><p class="timeline-subtitle">Gym · Bóng đá · Nấu ăn</p><p>Rèn luyện tính kỷ luật, sức khỏe, khả năng phối hợp và sự chủ động trong cuộc sống.</p><span class="timeline-tag">Sở thích</span></div></article>
+      </div>
+      <div class="certificate-note reveal"><span>✧</span><div><strong>Chứng chỉ & giải thưởng</strong><p>Hiện chưa có chứng chỉ hoặc giải thưởng chuyên môn. Mình sẽ cập nhật khi có thành tích mới.</p></div></div>
+    </section>
+
+    <section class="section container" id="projects">
+      <div class="section-heading reveal"><p class="eyebrow">05 / SẢN PHẨM</p><h2>Dự án <span class="gradient-text">tiêu biểu</span></h2><p>Một số dự án thực hành minh họa quá trình học tập của mình.</p></div>
+      <div class="project-filters reveal" role="group" aria-label="Lọc dự án"><button class="filter-btn active" data-filter="all">Tất cả</button><button class="filter-btn" data-filter="web">Web</button><button class="filter-btn" data-filter="python">Python</button></div>
+      <div class="projects-grid">
+        <article class="project-card reveal" data-category="web">
+          <div class="project-art art-portfolio"><div class="mini-browser"><div class="mini-browser-top"><i></i><i></i><i></i></div><div class="mini-browser-body"><div class="mini-line wide"></div><div class="mini-line"></div><div class="mini-button"></div><div class="mini-blocks"><i></i><i></i><i></i></div></div></div><span class="project-index">PROJECT 01</span></div>
+          <div class="project-body"><div class="project-topline"><span class="project-type">WEB DESIGN</span><span class="project-year">2026</span></div><h3>Website Portfolio cá nhân</h3><p>Website giới thiệu bản thân, kỹ năng, mục tiêu nghề nghiệp và dự án. Có giao diện responsive, chuyển theme và hiệu ứng cuộn.</p><div class="tech-tags"><span>HTML</span><span>CSS</span><span>JavaScript</span></div><div class="project-links"><a href="#contact" class="text-link">Trao đổi về dự án <span>↗</span></a><span class="project-status">Đang phát triển</span></div></div>
+        </article>
+        <article class="project-card reveal" data-category="python">
+          <div class="project-art art-python"><div class="terminal-card"><div class="terminal-title"><span>terminal</span><span>•••</span></div><div class="terminal-code"><p><b>$</b> python main.py</p><p class="terminal-green">&gt; DANH SÁCH CÔNG VIỆC</p><p>[1] Hoàn thành bài tập</p><p>[2] Ôn lập trình</p><p class="terminal-purple">Tiến độ: 80%</p><p><b>$</b> <span class="cursor">▋</span></p></div></div><span class="project-index">PROJECT 02</span></div>
+          <div class="project-body"><div class="project-topline"><span class="project-type">PYTHON APP</span><span class="project-year">2026</span></div><h3>Quản lý công việc cá nhân</h3><p>Chương trình dòng lệnh mô phỏng danh sách việc cần làm: thêm công việc, hiển thị danh sách, đánh dấu hoàn thành và thống kê tiến độ.</p><div class="tech-tags"><span>Python</span><span>List</span><span>Functions</span></div><div class="project-links"><a href="#contact" class="text-link">Trao đổi về dự án <span>↗</span></a><span class="project-status">Bản thực hành</span></div></div>
+        </article>
+        <article class="project-card reveal" data-category="web">
+          <div class="project-art art-ui"><div class="dashboard-card"><div class="dash-sidebar"><i></i><i></i><i></i><i></i></div><div class="dash-content"><div class="dash-title"></div><div class="dash-stat-row"><i></i><i></i><i></i></div><div class="dash-chart"><span></span><span></span><span></span><span></span><span></span><span></span><span></span></div></div></div><span class="project-index">PROJECT 03</span></div>
+          <div class="project-body"><div class="project-topline"><span class="project-type">UI PRACTICE</span><span class="project-year">2026</span></div><h3>Giao diện quản lý học tập</h3><p>Bản thiết kế giao diện dashboard để theo dõi môn học, thời hạn bài tập và tiến độ học tập. Dự án định hướng cho bước phát triển tiếp theo.</p><div class="tech-tags"><span>HTML</span><span>CSS Grid</span><span>UI Design</span></div><div class="project-links"><a href="#contact" class="text-link">Trao đổi về dự án <span>↗</span></a><span class="project-status">Ý tưởng / prototype</span></div></div>
+        </article>
+      </div>
+      <p class="project-disclaimer">Lưu ý: Đây là nội dung dự án mẫu để hoàn thiện bố cục Portfolio. Hãy thay bằng sản phẩm bạn đã thực sự làm và thêm link GitHub/demo nếu có.</p>
+    </section>
+
+    <section class="section container" id="contact">
+      <div class="section-heading reveal"><p class="eyebrow">06 / KẾT NỐI</p><h2>Cùng nhau tạo điều <span class="gradient-text">thú vị</span></h2><p>Bạn có ý tưởng, góp ý hoặc muốn trao đổi về công nghệ? Hãy gửi lời nhắn cho mình.</p></div>
+      <div class="contact-grid">
+        <div class="contact-info reveal"><h3>Thông tin liên hệ</h3><p>Mình luôn sẵn sàng học hỏi, lắng nghe góp ý và kết nối với những người có cùng sự quan tâm đến công nghệ.</p>
+          <a class="contact-item" href="mailto:your.email@example.com"><span class="contact-icon">✉</span><span><small>Email</small><strong>your.email@example.com</strong></span><span class="contact-arrow">↗</span></a>
+          <div class="contact-item"><span class="contact-icon">⌖</span><span><small>Khu vực</small><strong>Bình Dương, Việt Nam</strong></span></div>
+          <div class="social-links"><a href="https://github.com/" target="_blank" rel="noopener noreferrer">GitHub ↗</a><a href="https://www.linkedin.com/" target="_blank" rel="noopener noreferrer">LinkedIn ↗</a></div>
+          <p class="contact-hint">Nhớ thay email và đường dẫn mạng xã hội bằng thông tin thật của bạn.</p>
+        </div>
+        <form class="contact-form reveal" id="contactForm" novalidate>
+          <div class="form-heading"><h3>Gửi lời nhắn</h3><span class="required-note">* Bắt buộc</span></div>
+          <div class="form-group"><label for="name">Họ và tên <span>*</span></label><input id="name" name="name" type="text" placeholder="Nguyễn Văn A" autocomplete="name" required minlength="2" maxlength="60"><small class="field-error" id="nameError"></small></div>
+          <div class="form-group"><label for="email">Email <span>*</span></label><input id="email" name="email" type="email" placeholder="ban@example.com" autocomplete="email" required maxlength="100"><small class="field-error" id="emailError"></small></div>
+          <div class="form-group"><label for="subject">Chủ đề</label><input id="subject" name="subject" type="text" placeholder="Bạn muốn trao đổi về điều gì?" maxlength="100"></div>
+          <div class="form-group"><label for="message">Nội dung <span>*</span></label><textarea id="message" name="message" rows="5" placeholder="Viết lời nhắn của bạn..." required minlength="10" maxlength="1000"></textarea><small class="field-error" id="messageError"></small></div>
+          <button class="btn btn-primary submit-btn" type="submit">Kiểm tra & gửi lời nhắn <span>↗</span></button>
+          <p class="form-status" id="formStatus" role="status" aria-live="polite"></p>
+          <p class="form-footnote">Form demo kiểm tra dữ liệu trên trình duyệt; chưa gửi email đến máy chủ.</p>
+        </form>
+      </div>
+    </section>
+    <section class="closing-banner container reveal"><div><p class="eyebrow">CẢM ƠN BẠN ĐÃ GHÉ THĂM</p><h2>Hẹn gặp bạn ở <span class="gradient-text">dự án tiếp theo.</span></h2></div><a class="btn btn-secondary" href="#top">Trở về đầu trang ↑</a></section>
+  </main>
+
+  <footer class="site-footer"><div class="container footer-inner"><a class="logo" href="#home"><span class="logo-mark">&lt;/&gt;</span><span>vung<span class="accent">.dev</span></span></a><p>Thiết kế & phát triển với <span class="heart">♥</span> và tinh thần học hỏi.</p><span class="copyright">© <span id="year"></span> Trần Thanh Vững</span></div></footer>
+  <button class="back-to-top" id="backToTop" type="button" aria-label="Cuộn lên đầu trang" title="Lên đầu trang">↑</button>
+</body>
+</html>
