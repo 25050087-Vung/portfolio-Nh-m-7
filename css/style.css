@@ -176,10 +176,24 @@ h1 { font-size: clamp(2.8rem, 5vw, 4.5rem); line-height: 1.1; letter-spacing: -.
 }
 
 /* Trên điện thoại */
+
+/* Chỉ chỉnh ảnh đại diện trên điện thoại */
 @media (max-width: 480px) {
     .avatar-placeholder {
-        width: 85px;
-        height: 105px;
-        border-radius: 20px;
+        width: 80px;
+        height: 80px;
+        border-radius: 18px;
+        margin: 0 auto 20px;
+        overflow: hidden;
+        flex-shrink: 0;
+    }
+
+    .avatar-placeholder img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        object-position: center 35%;
+        display: block;
+        border-radius: inherit;
     }
 }
