@@ -142,3 +142,44 @@ h1 { font-size: clamp(2.8rem, 5vw, 4.5rem); line-height: 1.1; letter-spacing: -.
   *, *::before, *::after { scroll-behavior: auto !important; animation-duration: .01ms !important; animation-iteration-count: 1 !important; transition-duration: .01ms !important; }
   .reveal { opacity: 1; transform: none; }
 }
+
+
+
+
+/* Khung ảnh đại diện */
+.avatar-placeholder {
+    width: 220px;
+    height: 300px;
+    border-radius: 24px;
+    overflow: hidden;
+    position: relative;
+    margin-bottom: 24px;
+    border: 1px solid rgba(110, 231, 183, 0.35);
+    background: #151925;
+    flex-shrink: 0;
+}
+
+/* Ảnh bên trong khung */
+.avatar-placeholder img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center 35%;
+    border-radius: inherit;
+}
+
+
+/* Ẩn ngôi sao trang trí */
+.avatar-placeholder .avatar-spark {
+    display: none;
+}
+
+/* Trên điện thoại */
+@media (max-width: 480px) {
+    .avatar-placeholder {
+        width: 85px;
+        height: 85px;
+        border-radius: 20px;
+    }
+}
